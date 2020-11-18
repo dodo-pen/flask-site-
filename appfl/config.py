@@ -1,8 +1,6 @@
-from appfl.password import password
-
-
+from appfl.tt import ps
 class Configuration(object):
     DEBUG = True
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://myshop_user:*****@192.168.100.214/mydb'
+    SQLALCHEMY_DATABASE_URI = ps  #mysql+mysqlconnector://user:password@host/db
     SQLALCHEMY_NATIVE_UNICODE = True
